@@ -1,6 +1,5 @@
 import pytest
 from expense import Expense, ExpenseTracker
-from pathlib import Path
 
 def test_add_expense_updates_total(tmp_path):
     tracker = ExpenseTracker(filepath=tmp_path/'test.json')
